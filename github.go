@@ -84,7 +84,7 @@ func (g *github) Serve(b *bot.Bot) {
 			return
 		}
 		// 获取图片数据
-		imgURL := "https://image.thum.io/get/width/640/crop/320/viewportWidth/640/png/noanimate/" + svgURL
+		imgURL := "https://image.thum.io/get/width/1280/crop/640/viewportWidth/1280/png/noanimate/" + svgURL
 		imgData, err := getRequest(imgURL)
 		if err != nil {
 			logger.WithError(err).Error("Fail to get image data")
